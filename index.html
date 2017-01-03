@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Lora|Montserrat|Open+Sans|PT+Sans|Roboto|Source+Sans+Pro|Noto+Serif|Droid+Serif" rel="stylesheet">
+
+    <title></title>
+</head>
+
+<body>
+
+       <div id="wrappernav">
+
+            <ul class="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="work.html">WORK</a></li>
+                <li><a href="#flexcontact">LETS CHAT</a></li>
+            </ul>
+
+        </div>
+
+    <section class="flexheader">
+        
+    <div class="windmillcontainer">
+        
+        <img class="windmill" alt="" src="image/windmill.png">
+        
+        <img class="island" alt="" src="image/island.png">
+        
+    </div>
+
+    </section>
+
+    <section class="bodycontainer">
+
+        <div class="flexbody">
+
+            <img class="portrait" alt="" src="image/portrait.png">
+
+            <h1>Hello!</h1>
+
+            <p> My name is Andrew McCaughey, I love creating strange and quirky designs like this website...</p>
+
+            <hr>
+
+            <p class="p2">I'm a graphic designer / web developer based in Belfast, Northern Ireland. I have a passion for graphic and web design, I love to create websites, logos and illustrations.</p>
+            
+        </div>
+
+    </section>
+
+    <section class="contactcontainer">
+
+        <div id="flexcontact">
+            
+        <h2>Lets Chat!</h2>
+
+            <p class="contactp">I’m currently available for freelance work.</p>
+
+            <hr>
+
+            <p class="contactp2">If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
+            
+            <a id="buttona" href="mailto:andrewmccaughey1994@hotmail.com"><img id="button" alt="" src="image/button.jpg"></a>
+            
+        </div>
+
+    </section>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+ <script>
+
+$(function() {
+  // This will select everything with the class smoothScroll
+  // This should prevent problems with carousel, scrollspy, etc...
+  $('.smoothScroll').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000); // The number here represents the speed of the scroll in milliseconds
+        return false;
+      }
+    }
+  });
+});   
+    
+    </script>   
+    
+    
+</body>
+
+</html>

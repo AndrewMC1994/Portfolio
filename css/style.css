@@ -770,3 +770,358 @@ height:55%;
 width:50%;
 
 }
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      
+html, body { 
+    
+width: 100%;
+height: 100%;
+overflow-x: hidden;
+background-color: #88D5E5;
+
+}
+
+.flexheader{
+    
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height:100vh;
+background-image: url(../image/island.svg);
+background-size: cover;
+position: relative;
+
+ 
+}
+
+.windmillcontainer{
+    
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative; 
+top:10%;
+    
+}
+
+.island{
+    
+display: flex;
+width:75%;
+position: relative;
+z-index:4;
+
+}
+
+.windmill{
+    
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width:25%;
+top:-1%;
+left:39.5%;
+z-index:5;
+-webkit-animation: windmill 4s infinite linear;
+    -moz-animation: windmill 4s infinite linear;
+    -o-animation: windmill 4s infinite linear;
+    -ms-animation: windmill 4s infinite linear;
+    animation: windmill 4s infinite linear;
+    position: absolute;
+}
+
+@-webkit-keyframes windmill {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes windmill {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes windmill {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes windmill {
+    0% {
+        -ms-transform: rotate(0deg);
+    }
+    100% {
+        -ms-transformform: rotate(360deg);
+    }
+}
+
+
+.portrait{
+    
+display: flex;
+width:40%;
+bottom:20px;
+position: relative;
+
+}
+
+.bodycontainer{
+    
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+height:100vh;
+background-image: url(../image/cloudbanner.svg);
+background-size: 100%;
+position: relative; 
+background-repeat: no-repeat;
+z-index:1;
+padding-bottom:10%;
+background-color: #88D5E5;
+    
+    
+}
+
+.flexbody{
+    
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+position: relative;
+margin-bottom:8%; 
+
+} 
+
+header{
+  
+display: -webkit-flex;
+display: flex;
+position: absolute; 
+width:100vw;
+z-index:1;
+font-family: 'Montserrat', sans-serif
+
+    
+}
+
+#wrappernav {
+    height: 60px;
+    width: 100%;
+    display: block;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.navbar {
+    font-size: 1em;
+    font-family: 'Montserrat';
+}
+
+.navbar.trans {
+    background: transparent !important;
+}
+
+.navbar li {
+    padding: 0;
+    letter-spacing: 0.3em;
+    display: inline;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 0px;
+    color: black;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+.navbar a:hover {
+    color: #EC313C;
+}
+
+
+p{
+
+font-size:1.5em;
+font-family: 'Noto Serif', serif;
+width:80%;
+color: #545454;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+text-align: center;
+z-index:1; 
+    
+}
+
+.p2{
+
+font-size:1.5em;
+font-family: 'Noto Serif', serif;
+width:80%; 
+color: #545454;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+text-align: center;
+z-index:1; 
+    
+}
+
+h1{
+
+font-size:3em;
+font-family: 'Montserrat', sans-serif;
+color: #45b29a;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+z-index:1; 
+    
+}
+
+hr{
+    
+width:80%;
+opacity: 0.5;
+border-color:#545454;
+    
+}
+
+.contactcontainer{
+    
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background-color: #88D5E5;
+background-size: cover;
+position: relative;
+height:100vh;
+
+}
+
+#flexcontact{
+    
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+position: relative;
+    
+}
+
+.contactp{
+
+font-size:1.5em;
+font-family: 'Noto Serif', serif;
+width:50%;
+color: #545454;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+text-align: center;
+    
+}
+
+.contactp2{
+
+font-size:1.5em;
+font-family: 'Noto Serif', serif;
+width:50%; 
+color: #545454;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+text-align: center;
+line-height: 1.3em;
+}
+
+h2{
+
+font-size:4em;
+font-family: 'Montserrat', sans-serif;
+color: #45b29a;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+    
+}
+
+.overlay{
+    
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+top:-15%;
+height:1020px;
+position: absolute;
+z-index:0;
+
+
+}
+
+#button{
+    
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top:5%;
+width:300px;
+position: relative;
+padding-bottom:10%;
+
+}
+
+#buttona{
+    
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+
+buttona:hover{
+      
+opacity: 0.5; 
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out
+    
+}
+
+}
